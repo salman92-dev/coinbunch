@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-[0.75rem] bg-[#BFA2F61A] tracking-[2.4px] manrope-medium px-4 inline py-1 border border-[#BFA2F633] bg-clip-text text-transparent rounded-lg" 
             style={{backdropFilter : 'blur(20px)', backgroundImage : 'linear-gradient(270deg, #BFA2F6 0%, #50F8E4 100%)'}}>1K+ PROTOCOL TRUSTED US</p>
 
-            <h2 className="text-3xl md:text-5xl manrope-medium">They believed us</h2>
+            <h2 className="text-3xl md:text-5xl manrope-medium text-white">They believed us</h2>
 
             <MarqueeLogo />
       </div>
@@ -55,9 +55,9 @@ export default function Home() {
     <section className="flex flex-col items-center pb-16 px-6">
       <div className="flex flex-col items-center gap-4">
         <p className="text-[0.75rem] bg-[#BFA2F61A] tracking-[2.4px] manrope-medium px-4 inline py-1 border border-[#BFA2F633] bg-clip-text text-transparent rounded-lg gradient-1">NUMBERS</p>
-        <AnimatedText className="text-3xl md:text-5xl manrope-medium text-center" text="Discover Our Statistics" as="h2" />
+        <AnimatedText className="text-3xl md:text-5xl manrope-medium text-center text-white" text="Discover Our Statistics" as="h2" />
         <AnimatedText 
-        className="manrope-medium text-base md:text-[1.1rem] text-center"
+        className="manrope-medium text-base md:text-[1.1rem] text-center text-white"
         text="Discover our milestones and successes that demonstrate our commitment to excellence and innovation."
         as="p"
         />
@@ -71,7 +71,7 @@ export default function Home() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="border border-[#31353F] rounded-lg p-4 gradient-2 w-[19rem] flex flex-col items-start max-md:items-center">
           <h3 className="gradient-1 bg-clip-text text-transparent inline text-4xl tracking-[-1.6px] manrope-medium">124K+</h3>
-          <p className="text-[1.1rem] manrope-medium mt-18">
+          <p className="text-[1.1rem] manrope-medium mt-18 text-white">
             Aggregate Agreement Authors
           </p>
         </motion.div>
@@ -83,7 +83,7 @@ export default function Home() {
         transition={{ duration: 0.6, ease: 'easeOut',delay :0.1 }}
         className="border border-[#31353F] rounded-lg p-4 gradient-2 w-[19rem] flex flex-col items-start max-md:items-center">
           <h3 className="gradient-1 bg-clip-text text-transparent inline text-4xl tracking-[-1.6px] manrope-medium">5.67B+</h3>
-          <p className="text-[1.1rem] manrope-medium mt-18">
+          <p className="text-[1.1rem] manrope-medium mt-18 text-white">
           Total Transactions
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ export default function Home() {
         transition={{ duration: 0.6, ease: 'easeOut',delay :0.2 }}
         className="border border-[#31353F] rounded-lg p-4 gradient-2 w-[19rem] flex flex-col items-start max-md:items-center">
           <h3 className="gradient-1 bg-clip-text text-transparent inline text-4xl tracking-[-1.6px] manrope-medium">982.15M+</h3>
-          <p className="text-[1.1rem] manrope-medium mt-18">
+          <p className="text-[1.1rem] manrope-medium mt-18 text-white">
             Unique 
            Addresses  
           </p>
@@ -108,7 +108,7 @@ export default function Home() {
         transition={{ duration: 0.6, ease: 'easeOut',delay :0.3 }}
         className="border border-[#31353F] rounded-lg p-4 gradient-2 w-[19rem] flex flex-col items-start max-md:items-center">
           <h3 className="gradient-1 bg-clip-text text-transparent inline text-4xl tracking-[-1.6px] manrope-medium">5.42.16M+</h3>
-          <p className="text-[1.1rem] manrope-medium mt-18">
+          <p className="text-[1.1rem] manrope-medium mt-18 text-white">
             Total visits today  
           </p>
         </motion.div>
@@ -125,7 +125,7 @@ export default function Home() {
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       className="w-[95%] md:w-[80%] flex flex-col gap-6 pl-8 gradient-border mb-12">
-        <h4 className="text-lg md:text-2xl manrope-bold">How it works</h4>
+        <h4 className="text-lg md:text-2xl manrope-bold text-white">How it works</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">Easy Steps to Exchange Bitcoin</h2>
       </motion.div>
       <motion.div 
@@ -150,8 +150,8 @@ export default function Home() {
           <p className="w-16 h-16 manrope-bold text-2xl flex items-center justify-center gradient-5 rounded-full mb-6">
             <span className="gradient-8 text-transparent bg-clip-text">02</span>
           </p>
-          <h4 className="text-2xl manrope-bold mb-2">Add Funds</h4>
-          <p className="manrope-regular text-base mb-6">
+          <h4 className="text-2xl manrope-bold mb-2 text-white">Add Funds</h4>
+          <p className="manrope-regular text-base mb-6 text-white">
            Transfer your BTC to your exchange wallet.
            </p>
           <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start">
@@ -162,8 +162,8 @@ export default function Home() {
           <p className="w-16 h-16 manrope-bold text-2xl flex items-center justify-center gradient-5 rounded-full mb-6">
             <span className="gradient-8 text-transparent bg-clip-text">03</span>
           </p>
-          <h4 className="text-2xl manrope-bold mb-2">Trade & Withdraw</h4>
-          <p className="manrope-regular text-base mb-6">
+          <h4 className="text-2xl manrope-bold mb-2 text-white">Trade & Withdraw</h4>
+          <p className="manrope-regular text-base mb-6 text-white">
             Exchange BTC for your desired currency and withdraw it.
           </p>
           <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start">
