@@ -14,6 +14,9 @@ export default function Home() {
   const [ref3, inView3] = useInView({ triggerOnce: true ,threshold: 0.9});
   const [ref4, inView4] = useInView({ triggerOnce: true,threshold: 0.9 });
   const [ref5, inView5] = useInView({ triggerOnce: true,threshold: 0.9 });
+  const [ref6, inView6] = useInView({ triggerOnce: true,threshold: 0.9 });
+  const [ref7, inView7] = useInView({ triggerOnce: true,threshold: 0.9 });
+  const [ref8, inView8] = useInView({ triggerOnce: true,threshold: 0.9 });
   return (
 
    <div className="2xl:container mx-auto overflow-hidden">
@@ -116,11 +119,21 @@ export default function Home() {
     {/* -------how it works------ */}
     <section className="px-6 flex flex-col items-center py-12 relative">
       <Image className="absolute select-none right-0 top-[-30rem] select-none" src="/bg-1.png" width={496} height={1122} alt="bg-1" />
-      <div className="w-[95%] md:w-[80%] flex flex-col gap-6 pl-8 gradient-border mb-12">
+      <motion.div 
+        ref={ref6}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView6 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="w-[95%] md:w-[80%] flex flex-col gap-6 pl-8 gradient-border mb-12">
         <h4 className="text-lg md:text-2xl manrope-bold">How it works</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">Easy Steps to Exchange Bitcoin</h2>
-      </div>
-      <div className="bg-[#23262F4D] rounded-xl flex flex-wrap max-md:gap-4 items-center w-[95%] md:w-[80%]">
+      </motion.div>
+      <motion.div 
+      ref={ref7}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={inView7 ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="bg-[#23262F4D] rounded-xl flex flex-wrap max-md:gap-4 items-center w-[95%] md:w-[80%]">
         <div className="p-6 py-12 rounded-xl gradient-4 w-full md:w-[33.33%] hover:scale-110 duration-200">
           <span className="w-16 h-16 manrope-bold text-2xl text-black flex items-center justify-center bg-white rounded-full mb-6">
             01
@@ -157,7 +170,7 @@ export default function Home() {
             Buy and HODL
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
 
     {/* ----bitcoin price */}
@@ -167,7 +180,12 @@ export default function Home() {
         <Image className="absolute top-0 left-0" src="/bg-2.png" width={319} height={415} alt="bg-2" />
         <Image className="absolute bottom-0 right-0 z-1" src="/bg-3.png" width={371} height={329} alt="bg-2" />
         <div className="flex items-center flex-wrap justify-between">
-          <div className="flex flex-col gap-3 w-full md:w-[48%]">
+          <motion.div 
+           ref={ref8}
+          initial={{ opacity: 0, scale :  0.5 }}
+          animate={inView8 ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="flex flex-col gap-3 w-full md:w-[48%]">
             <p className="text-[0.75rem] w-fit bg-[#BFA2F61A] tracking-[2.4px] manrope-medium px-4 inline py-1 border border-[#BFA2F633] bg-clip-text text-transparent rounded-lg" 
             style={{backdropFilter : 'blur(20px)', backgroundImage : 'linear-gradient(270deg, #BFA2F6 0%, #50F8E4 100%)'}}>BRAND BOOST</p>
             <h2 className="text-3xl md:text-5xl manrope-medium tracking-[-1.92px]">Live Bitcoin Price</h2>
@@ -201,7 +219,7 @@ export default function Home() {
                 Start Exchange
               </button>
             </div>
-          </div>
+          </motion.div>
           <div className="w-full md:w-[48%]">
             <Image src="/wallpaper-1.png" alt="logo" width={564} height={530} />
           </div>
