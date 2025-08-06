@@ -18,7 +18,7 @@ export default function Home() {
 
    <div className="2xl:container mx-auto overflow-hidden">
     {/* ---------hero-banner---------- */}
-    <section className="flex flex-col items-center gap-6 pb-20"
+    <section className="flex flex-col items-center gap-6 pb-32"
     style={{background : 'url(/hero-bg.webp) no-repeat', backgroundSize : 'cover', backgroundPosition :'top center'}}
     >
       <Navbar/>
