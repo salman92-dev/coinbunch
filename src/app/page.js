@@ -251,7 +251,7 @@ export default function Home() {
 
     {/* ----reason to choose-------- */}
     <section className="py-16 relative z-100">
-      <Image className="select-none absolute z-1 right-0 bottom-[-35rem]" src="/bg-5.png" width={553} height={1243} alt="bg" />
+      <Image className="select-none absolute -z-1 right-0 bottom-[-35rem] max-md:-z-1" src="/bg-5.png" width={553} height={1243} alt="bg" />
        <div className="w-[85%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
         <h4 className="text-lg md:text-2xl manrope-bold">How it works</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">Easy Steps to Exchange Bitcoin</h2>
@@ -322,7 +322,7 @@ export default function Home() {
     </section>
 
     {/* -----testimonials------------ */}
-    <section className="py-16">
+    <section className="py-16 relative z-100">
       <div className="w-[80%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
         <h4 className="text-lg md:text-2xl manrope-bold">User Reviews</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">What our users Says</h2>

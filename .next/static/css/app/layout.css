@@ -301,6 +301,9 @@
   .left-2 {
     left: calc(var(--spacing) * 2);
   }
+  .-z-1 {
+    z-index: calc(1 * -1);
+  }
   .z-1 {
     z-index: 1;
   }
@@ -746,6 +749,11 @@
       }
     }
   }
+  .max-lg\:z-\[-1\] {
+    @media (width < 64rem) {
+      z-index: -1;
+    }
+  }
   .max-md\:fixed {
     @media (width < 48rem) {
       position: fixed;
@@ -754,6 +762,21 @@
   .max-md\:bottom-\[45rem\] {
     @media (width < 48rem) {
       bottom: 45rem;
+    }
+  }
+  .max-md\:-z-1 {
+    @media (width < 48rem) {
+      z-index: calc(1 * -1);
+    }
+  }
+  .max-md\:z-1 {
+    @media (width < 48rem) {
+      z-index: 1;
+    }
+  }
+  .max-md\:z-\[-1\] {
+    @media (width < 48rem) {
+      z-index: -1;
     }
   }
   .max-md\:mt-40 {
