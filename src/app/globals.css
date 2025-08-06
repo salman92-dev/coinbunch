@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: manrope-regular;
+  src: url(/fonts/manrope/manrope-regular.otf);
+}
+@font-face {
+  font-family: manrope-medium;
+  src: url(/fonts/manrope/manrope-medium.otf);
+}
+@font-face {
+  font-family: manrope-semibold;
+  src: url(/fonts/manrope/manrope-semibold.otf);
+}
+@font-face {
+  font-family: manrope-bold;
+  src: url(/fonts/manrope/manrope-bold.otf);
+}
+.manrope-regular {
+  font-family: "manrope-regular";
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-medium {
+  font-family: "manrope-medium";
+  font-weight: 500;
+  font-style: normal;
+}
+.manrope-semibold {
+  font-family: "manrope-semibold";
+  font-weight: 600;
+  font-style: normal;
+}
+.manrope-bold {
+  font-family: "manrope-semibold";
+  font-weight: 700;
+  font-style: normal;
+}
+.gradient-1 {
+  background-image: linear-gradient(90deg, #50F8E4 0%, #BFA2F6 100%);
+}
+.gradient-2 {
+  background-image: linear-gradient(302.79deg, #31353F 0%, #0A0D14 100%);
+}
+.gradient-3 {
+  background-image: linear-gradient(0deg, #FFFFFF 42.23%, #0A0D14 100%);
+}
+.gradient-4 {
+  background-image: linear-gradient(178.77deg, #2BFDF3 5.85%, #501A97 133.63%);
+}
+.gradient-5{
+  background: linear-gradient(90deg, rgba(43, 253, 243, 0.1) 0%, rgba(218, 254, 51, 0.1) 100%);
+}
+.gradient-6 {
+  background: linear-gradient(90deg, rgba(43, 253, 243, 0.1) 0%, rgba(43, 253, 243, 0) 100%);
+}
+.gradient-7 {
+  background: linear-gradient(180deg, #161922 0%, #000000 100%);
+}
+.gradient-8 {
+  background-image: linear-gradient(270deg, #8833FE 0%, #2BFDF3 100%);
+}
+.gradient-9 {
+  background-image: linear-gradient(46.67deg, #31353F 0%, #0A0D14 100%);
+}
+.gradient-10 {
+  background-image: linear-gradient(90deg, #191B22 0%, #AD33FE 50%, #191B21 100%);
+}
+.gradient-border {
+  position: relative;
+}
+.gradient-border::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #2BFDF3 0%, #8833FE 100%);
+}
+.swiper-pagination {
+  bottom: 0px !important;
+}
+.swiper-pagination-bullet {
+  background-color: #33FEF4 !important;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #33FEF4 !important;
+  opacity: 1;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
