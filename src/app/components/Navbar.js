@@ -79,7 +79,7 @@ const path = usePathname();
       </div>
        <div className={`${menuOpen ? 'block blurred' : 'hidden'} sm:hidden absolute`}></div>
         <div className={`md:hidden absolute top-[4rem] left-0 right-0 sulphur-regular bg-[#000] flex flex-col justify-center px-6 gap-12 py-12 h-[100vh] w-[100%] transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-          <Image className={`absolute top-0 left-0 ${menuOpen ? 'opacity-100' : 'opacity-0 duration-400' }`} src="/navbg.png" width={237} height={852} alt='bg' />
+          <Image className={`absolute top-0 left-0 -z-1 ${menuOpen ? 'opacity-100' : 'opacity-0 duration-400' }`} src="/navbg.png" width={237} height={852} alt='bg' />
           <Image className={`w-[55%] absolute top-0 right-0 transition delay-500 duration-500 origin-bottom-left ${menuOpen ? 'opacity-100 rotate-0' : 'opacity-0 rotate-15' }`} src="/nav-mobile.png" width={237} height={852} alt='bg' />
           <Link href="#stats" className="hover:scale(1.1) text-2xl">Statistics</Link>
           <Link href="#howitworks" className="text-2xl">How it works</Link>
