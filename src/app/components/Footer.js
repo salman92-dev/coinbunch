@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex justify-between flex-wrap gap-y-8">
                 <div className="flex flex-col max-md:items-center gap-6 w-full md:w-[50%]">
                     <Image className="w-40" src="/logo.png" alt="logo" width={338} height={68} priority />
-                    <p className="manrope-regular text-base tracking-[0.5px]">© CoinBuch - All Rights Reserved.</p>
+                    <p className="manrope-regular text-base tracking-[0.5px]">© CoinBunch - All Rights Reserved.</p>
                 </div>
                 <div className="flex flex-col items-end max-md:items-center gap-6 w-full md:w-[50%]">
                     <p className="manrope-regular text-base tracking-[0.5px]">Community</p>
@@ -34,4 +34,5 @@ const Footer = () => {
         </footer>
     )
 }
+
 export default Footer;
