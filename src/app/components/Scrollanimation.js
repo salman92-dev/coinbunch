@@ -1,12 +1,24 @@
 'use client';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
 
-export default function AnimatedText({ text, className = '', as = 'p' }) {
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useMemo } from 'react';
+import { useAnimation } from 'framer-motion';
+
+export default function AnimatedText({
+  text,
+  className = '',
+  as = 'p',
+  delay = 0,
+  duration = 0.4,
+  y = 20,
+}) {
   const Tag = motion[as] || motion.p;
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.05,
+  });
 
   useEffect(() => {
     if (inView) {
@@ -14,14 +26,18 @@ export default function AnimatedText({ text, className = '', as = 'p' }) {
     }
   }, [inView, controls]);
 
-  const variants = {
-    hidden: { opacity: 0, y: 30 },
+  const variants = useMemo(() => ({
+    hidden: { opacity: 0, y },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: {
+        duration,
+        ease: 'easeOut',
+        delay,
+      },
     },
-  };
+  }), [delay, duration, y]);
 
   return (
     <Tag
