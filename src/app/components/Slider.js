@@ -26,7 +26,7 @@ export default function ImageSlider() {
       <SwiperSlide>
         <div className='bg-white/10 p-6 rounded-xl pl-16 md:pl-30 relative'>
              <Image className='absolute w-12 left-2 top-4 md:left-14' src="/komma.svg" width={24} height={24} alt='logo' />
-            <p className='manrope-regulat text-base tracking-[-0.5px]'>
+            <p className='manrope-regulat text-base text-white tracking-[-0.5px]'>
                     The platform is incredibly easy to use, and my assets have 
                     grown significantly since I became a holder. The team’s 
                     unwavering focus and innovation make me excited for what’s 
@@ -35,8 +35,8 @@ export default function ImageSlider() {
             <div className=' flex items-center gap-2 mt-6'>
                 <Image className='w-12' src="/twitter.svg" alt="twitter" width={24} height={24} />
                 <div>
-                    <h5 className='text-xl manrope-bold'>Floyd M.</h5>
-                    <p>- Trader</p>
+                    <h5 className='text-xl manrope-bold text-white'>Floyd M.</h5>
+                    <p className='text-white'>- Trader</p>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ export default function ImageSlider() {
      <SwiperSlide>
         <div className='bg-white/10 p-6 rounded-xl pl-16 md:pl-30 relative'>
              <Image className='absolute w-12 left-2 top-4 md:left-14' src="/komma.svg" width={24} height={24} alt='logo' />
-            <p className='manrope-regulat text-base tracking-[-0.5px]'>
+            <p className='manrope-regulat text-base tracking-[-0.5px] text-white'>
                     Stem offers a seamless and intuitive trading experience. I was 
                     able to start buying and trading crypto in no time. The 
                     interface is incredibly user-friendly, and the transaction 
@@ -53,8 +53,8 @@ export default function ImageSlider() {
             <div className=' flex items-center gap-2 mt-6'>
                 <Image className='w-12' src="/twitter.svg" alt="twitter" width={24} height={24} />
                 <div>
-                    <h5 className='text-xl manrope-bold'>Courtney F.</h5>
-                    <p>- New Trader</p>
+                    <h5 className='text-xl manrope-bold text-white'>Courtney F.</h5>
+                    <p className='text-white'>- New Trader</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ export default function ImageSlider() {
       <SwiperSlide>
         <div className='bg-white/10 p-6 rounded-xl pl-16 md:pl-30 relative'>
              <Image className='absolute w-12 left-2 top-4 md:left-14' src="/komma.svg" width={24} height={24} alt='logo' />
-            <p className='manrope-regulat text-base tracking-[-0.5px]'>
+            <p className='manrope-regulat text-base tracking-[-0.5px] text-white'>
                     The platform is incredibly easy to use, and my assets have 
                     grown significantly since I became a holder. The team’s 
                     unwavering focus and innovation make me excited for what’s 
@@ -71,8 +71,8 @@ export default function ImageSlider() {
             <div className=' flex items-center gap-2 mt-6'>
                 <Image className='w-12' src="/twitter.svg" alt="twitter" width={24} height={24} />
                 <div>
-                    <h5 className='text-xl manrope-bold'>Floyd M.</h5>
-                    <p>- Trader</p>
+                    <h5 className='text-xl manrope-bold text-white'>Floyd M.</h5>
+                    <p className='text-white'>- Trader</p>
                 </div>
             </div>
         </div>
