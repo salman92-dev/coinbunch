@@ -53,7 +53,7 @@ export default function Home() {
       </div>
     </section>
     {/* -------statistics---------- */}
-    <section className="flex flex-col items-center pb-16 px-6">
+    <section className="flex flex-col items-center pb-16 px-6" id="stats">
       <div className="flex flex-col items-center gap-4">
         <p className="text-[0.75rem] bg-[#BFA2F61A] tracking-[2.4px] manrope-medium px-4 inline py-1 border border-[#BFA2F633] bg-clip-text text-transparent rounded-lg gradient-1">NUMBERS</p>
         <AnimatedText className="text-3xl md:text-5xl manrope-medium text-center text-white" text="Discover Our Statistics" as="h2" />
@@ -118,7 +118,7 @@ export default function Home() {
     </section>
 
     {/* -------how it works------ */}
-    <section className="px-6 flex flex-col items-center py-12 relative">
+    <section className="px-6 flex flex-col items-center py-12 relative" id="howitworks">
       <Image className="absolute select-none right-0 top-[-30rem] select-none" src="/bg-1.png" width={496} height={1122} alt="bg-1" />
       <motion.div 
         ref={ref6}
@@ -175,7 +175,7 @@ export default function Home() {
     </section>
 
     {/* ----bitcoin price */}
-    <section className="py-16 relative">
+    <section className="py-16 relative" id="price">
         <Image className="absolute bottom-[-18rem] left-0 z-1" src="/bg-4.png" width={371} height={329} alt="bg-2" />
        <div className="w-[85%] mx-auto gradient-9 p-4 md:p-10 rounded-xl relative overflow-hidden">
         <Image className="absolute top-0 left-0" src="/bg-2.png" width={319} height={415} alt="bg-2" />
@@ -269,7 +269,7 @@ export default function Home() {
     </section>
 
     {/* ----reason to choose-------- */}
-    <section className="py-16 relative z-100">
+    <section className="py-16 relative z-100" id="why-choose">
       <Image className="select-none absolute -z-1 right-0 bottom-[-35rem] max-md:-z-1" src="/bg-5.png" width={553} height={1243} alt="bg" />
        <div className="w-[85%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
         <h4 className="text-lg md:text-2xl manrope-bold text-white">How it works</h4>
@@ -341,7 +341,7 @@ export default function Home() {
     </section>
 
     {/* -----testimonials------------ */}
-    <section className="py-16 relative z-100">
+    <section className="py-16 relative z-100" id="reviews">
       <div className="w-[80%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
         <h4 className="text-lg md:text-2xl manrope-bold">User Reviews</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">What our users Says</h2>
@@ -350,7 +350,7 @@ export default function Home() {
     </section>
 
     {/* -----faq------- */}
-    <section className="py-16 relative">
+    <section className="py-16 relative" id="faq">
       <Image className="absolute left-0 bottom-[-5rem] max-md:bottom-[45rem]" src="/bg-6.png" width={426} height={1122} alt="bg" />
        <div className="w-[85%] gradient-9 rounded-xl mx-auto p-4 md:p-6 flex flex-wrap gap-4 items-end justify-between">
             <div className="w-full md:w-[32%]">
