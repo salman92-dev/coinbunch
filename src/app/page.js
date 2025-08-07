@@ -272,14 +272,14 @@ export default function Home() {
     <section className="py-16 relative z-100" id="why-choose">
       <Image className="select-none absolute -z-1 right-0 bottom-[-35rem] max-md:-z-1" src="/bg-5.png" width={553} height={1243} alt="bg" />
        <div className="w-[85%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
-        <h4 className="text-lg md:text-2xl manrope-bold text-white">How it works</h4>
-        <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">Easy Steps to Exchange Bitcoin</h2>
+        <h4 className="text-lg md:text-2xl manrope-bold text-white">Why CoinBunch?</h4>
+        <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">Reasons to Choose</h2>
       </div>
-      <div className="w-[85%] mx-auto flex items-center justify-between flex-wrap gap-y-6 relative z-100">
+      <div className="w-[85%] content-stretch mx-auto flex justify-between flex-wrap gap-y-6 relative z-100">
 
          <div className="w-full md:w-[49%] flex max-md:flex-col items-center gap-2 bg-[#14161B] rounded-lg">
           <div>
-            <Image className="w-full h-full" src="/rates.svg" width={100} height={100} alt="logo" /> 
+            <Image className="w-[14rem]" src="/rates.svg" width={100} height={100} alt="logo" /> 
           </div>
           <div className="p-4">
             <h4 className="manrope-bold text-2xl md:text-3xl mb-2 text-white">Best rates</h4>
