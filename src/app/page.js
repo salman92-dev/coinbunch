@@ -143,7 +143,7 @@ export default function Home() {
           <p className="manrope-regular text-base mb-6 text-black">
             Sign up on a trusted crypto exchange like Binance, Coinbase, or Kraken.
           </p>
-          <button className="w-full gradient-7 py-3 rounded-xl px-6">
+          <button className="w-full gradient-7 py-3 rounded-xl px-6 text-white">
             Start Trading
           </button>
         </div>
@@ -155,7 +155,7 @@ export default function Home() {
           <p className="manrope-regular text-base mb-6 text-white">
            Transfer your BTC to your exchange wallet.
            </p>
-          <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start">
+          <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start text-white">
             Add Funds....
           </button>
         </div>
@@ -167,7 +167,7 @@ export default function Home() {
           <p className="manrope-regular text-base mb-6 text-white">
             Exchange BTC for your desired currency and withdraw it.
           </p>
-          <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start">
+          <button className="w-full gradient-6 py-3 rounded-xl px-6 text-start text-white">
             Buy and HODL
           </button>
         </div>
@@ -343,7 +343,7 @@ export default function Home() {
     {/* -----testimonials------------ */}
     <section className="py-16 relative z-100" id="reviews">
       <div className="w-[80%] mx-auto flex flex-col gap-6 pl-8 gradient-border mb-12">
-        <h4 className="text-lg md:text-2xl manrope-bold">User Reviews</h4>
+        <h4 className="text-lg md:text-2xl manrope-bold text-white">User Reviews</h4>
         <h2 className="manrope-medium text-3xl md:text-5xl gradient-3 text-transparent bg-clip-text">What our users Says</h2>
       </div>
        <ImageSlider/>
@@ -363,7 +363,7 @@ export default function Home() {
               If the solution eludes you, 
               kindly engage with our customer support.
             </p>
-            <button className="w-full gradient-7 py-3 rounded-xl px-6">
+            <button className="w-full gradient-7 py-3 rounded-xl px-6 text-white">
               Get In Touch
             </button>
               </div>
