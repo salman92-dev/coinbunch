@@ -356,7 +356,7 @@ export default function Home() {
             <div className="w-full md:w-[32%]">
               <p className="text-[0.75rem] w-fit bg-[#BFA2F61A] tracking-[2.4px] manrope-medium px-4 inline py-1 border border-[#BFA2F633] bg-clip-text text-transparent rounded-lg" 
               style={{backdropFilter : 'blur(20px)', backgroundImage : 'linear-gradient(270deg, #BFA2F6 0%, #50F8E4 100%)'}}>FAQ</p>
-              <h2 className="text-3xl md:text-5xl manrope-medium mt-3">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-5xl manrope-medium mt-3 text-white">Frequently Asked Questions</h2>
               <div className="p-4 rounded-xl gradient-4 w-full mt-12">
             <h4 className="text-2xl manrope-bold mb-2 text-black">Still have questions?</h4>
             <p className="manrope-regular text-base mb-6 text-black">
